@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paragraphs Example</title>
+  </head>
+  <body>
+    <p id="p1" class="classP">This is paragraph 1.</p>
+    <p id="p2" class="classP">This is paragraph 2.</p>
+    <p id="p3" class="classP">This is paragraph 3.</p>
+    <p id="p4" class="classP">This is paragraph 4.</p>
+	<script>
+		function changeTextColor() {
+            var paragraphs = document.querySelectorAll(".classP");
+            for (var i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.color = "red";
+            }
+            }
+        changeTextColor();
+	</script>
+</body>
+</html>

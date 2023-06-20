@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Highlight Paragraph on Button Click</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="addHighlight()">Click me!</button>
+    <p id="paragraph">Click button to see the highlighted text.</p>
+
+    <script>
+      function addHighlight() {
+        document.getElementById("paragraph").classList.add("highlight");
+      }
+    </script>
+  </body>
+</html>

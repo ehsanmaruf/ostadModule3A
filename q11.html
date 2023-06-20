@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic List Creation</title>
+</head>
+<body>
+	<ul id="myList">
+	</ul>
+
+	<script>
+		var myList = document.getElementById("myList");
+
+		for (var i = 1; i <= 5; i++) {
+			var listItem = document.createElement("li");
+			listItem.textContent = i;
+			myList.appendChild(listItem);
+		}
+	</script>
+</body>
+</html>

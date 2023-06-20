@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button Click Test</title>
+  </head>
+  <body>
+    <button onclick="changeText()">Click me!</button>
+    <p id="paragraph">Click button to change the text.</p>
+
+    <script>
+      function changeText() {
+        document.getElementById("paragraph").innerHTML = "Button Clicked!";
+      }
+    </script>
+  </body>
+</html>

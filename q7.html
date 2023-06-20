@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 7</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}s
+		img {
+			display: block;
+			margin: auto;
+			width: 50%;
+		}
+	</style>
+</head>
+<body onmousedown="displayCoordinates(event)" onkeydown="displayKeyCode(event)">
+	<img src="https://media.istockphoto.com/id/1224500457/photo/programming-code-abstract-technology-background-of-software-developer-and-computer-script.jpg?b=1&s=612x612&w=0&k=20&c=zhGJ4vjUOGBD9VjpGuiPPnt6ehae9_rVgCYifyVnBFk="
+     onmouseover="changeImage()" onmouseout="revertImage()">
+	<script>
+		function displayCoordinates(e) {
+			alert("Coordinates: (" + e.clientX + ", " + e.clientY + ")");
+		}
+
+		function displayKeyCode(e) {
+			alert("Key Code: " + e.keyCode);
+		}
+
+		function changeImage() {
+			document.querySelector("img").src = "https://img.freepik.com/free-photo/programming-background-collage_23-2149901789.jpg";
+		}
+
+		function revertImage() {
+			document.querySelector("img").src = "https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?q=10&h=200";
+		}
+	</script>
+</body>
+</html>

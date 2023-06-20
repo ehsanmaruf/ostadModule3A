@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Change Image Source</title>
+  </head>
+  <body>
+    <img id="myImage" src="https://media.gettyimages.com/id/1248057082/photo/cityscape-of-dhaka-bangladesh.jpg?s=612x612&w=gi&k=20&c=-M4pYIRkewSPC0RDEq24B9gm7B2LOM2A3hXTzYa7NCw=" alt="placeholder image">
+    <br><br>
+    <button onclick="changeImage()">Change Image</button>
+    <script>
+        function changeImage() {
+            var image = document.getElementById("myImage");
+            image.src = "https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=";
+        }
+    </script>
+  </body>
+</html>
